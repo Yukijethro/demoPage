@@ -1,23 +1,39 @@
 /*public */
 
-body, ul, li{padding: 0; margin: 0; list-style: none;}
-body{background-color: #333; font-family: '微软雅黑';}
-h1{text-align: center;}
-h2{
+body, ul, li{
+	padding: 0; 
+	margin: 0; 
+	list-style: none;
+}
+body{
+	background: #f1f1f1;
+	/*f6f9fc*/
+	font-family: 'Microsoft JhengHei';
+}
+h1{
+	font-size: 24px;
 	text-align: center;
 }
 
+h2{
+	font-size: 20px;
+	font-weight: normal;
+}
 
+img{
+	display: block;
+	max-width: 100%;
+}
 
-
-
-
-
-
-
+.main{
+	width: 600px;
+	margin: auto;
+}
 
 /*tab start*/
-#tab{width: 500px; margin: 0 auto;}
+#tab{
+
+}
 .control-list{
 	height: 35px;
 	color: #fff;
@@ -25,8 +41,10 @@ h2{
 .content-list{
 	padding: 30px;
 	background: #fff;
+	min-height: 200px;
 }
 .control-list-item{
+	cursor: pointer;
 	background-color: #666;
 	margin-right: 3px;
 	height: 100%;
@@ -49,14 +67,45 @@ h2{
 }
 /*tab end*/
 
+/*tabs start*/
+.tab{
+	background: #fff;
+	border: 1px solid #e1e1e1;
+	font-family: 'Candara';
+}
 
+.tab__navs{
+	overflow: hidden;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.tab__link{
+	cursor: pointer;
+	padding: 10px 20px;
+	float: left;
+	list-style: none;
+}
+
+.tab__link.active{
+	background: #e1e1e1;
+}
+
+.tab__item{
+	padding: 20px;
+	display: none;
+}
+
+.tab__item.active{
+	display: block;
+}
+/*tabs end*/
 
 /*图片轮播 start*/
 #carousel{
+	border: 8px solid #fff;
 	position: relative;
 	width: 500px;
-	height: 200px;
-	margin: 100px auto;
+	height: 300px;
 	overflow: hidden;
 }
 .carousel-inner{
@@ -71,24 +120,7 @@ h2{
 	text-align: center;
 	line-height: 200px;
 	color: #fff;
-	font-size: 50px;
 }
-.item-first{
-	background: #888;
-}
-.item-one{
-	background: #666;
-}
-.item-two{
-	background: #777;
-}
-.item-three{
-	background: #888;
-}
-.item-last{
-	background: #666;
-}
-
 
 .carousel-list-index{
 	width: 100%;
@@ -98,14 +130,14 @@ h2{
 }
 .list-index-item{
 	display: inline-block;
-	width: 15px;
-	height: 15px;
+	width: 10px;
+	height: 5px;
 	margin: 0 10px;
-	background: green;
+	background: #fff;
 	border-radius: 4px;
 }
 .list-index-item.current{
-	background: red;
+	background: #000;
 }
 
 .direction{
@@ -117,26 +149,27 @@ h2{
 .direction-item{
 	display: inline-block;
 	position: absolute;
-	border: 10px solid rgba(0, 0, 0, 0);
+	width: 30px;
+	height: 30px;
+	background-size: cover;
+	cursor: pointer;
 }
 .prev{
 	left: 10px;
 	border-right-color: #ff0; 
+	background-image: url(../img/arrow_left.png);
 }
 .next{
 	right: 10px;
     border-left-color: #ff0;
+    background-image: url(../img/arrow_right.png);
 }
 /*图片轮播 end*/
-
-
 
 /*元素拖动 start*/
 #moveElement{
 	height: 300px; 
-	width: 498px;
 	border: 1px solid #fff;
-	margin: 100px auto;
 	position: relative;
 }
 .moveEl{

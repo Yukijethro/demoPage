@@ -262,3 +262,25 @@ Tabs.prototype.hide = function(index){
 $('.tab').tabs({
 	cIndex: 0
 });
+
+
+var Accordion = function($el) {
+	var that = this;
+
+	$el.on('click', '.accordion__link', function(event){
+		var $targetElem = $(event.target);
+
+		that.dropdown($targetElem);
+	});
+};
+
+Accordion.prototype.dropdown = function($targetElem) {
+	var 
+		$parent = $targetElem.parent(),
+		$next   = $targetElem.next('.accordion__submenu');
+
+	$next.slideToggle();
+	$parent.toggleClass('open');
+};	
+
+var accordion = new Accordion($('.accordion'));

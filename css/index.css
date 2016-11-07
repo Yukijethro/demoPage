@@ -168,6 +168,7 @@ img{
 
 /*元素拖动 start*/
 #moveElement{
+	background: #fff;
 	height: 300px; 
 	border: 1px solid #fff;
 	position: relative;
@@ -182,3 +183,49 @@ img{
 	cursor: move;
 }
 
+/*-------------------- BEGIN MODULE ACCORION SECTION -------------------*/
+.accordion{
+	width: 100%;
+    background: #FFF;
+}
+
+.accordion__submenu{
+	display: none;
+}
+
+.accordion__link{
+	cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 30px;
+    color: #4D4D4D;
+    font-size: 16px;
+    font-weight: bolder;
+    border-bottom: 1px solid #CCC;
+    position: relative;
+}
+
+.accordion__item{
+	list-style: none;
+}
+
+.accordion__item.open .accordion__link{
+    color: #b63b4d;
+}
+
+.accordion__submenu{
+	background: #444359;
+}
+
+.accordion__submenu-item{
+	color: #fff;
+	padding: 15px 15px 15px 40px;
+	border-bottom: 1px solid #4b4a5e;
+	-webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.accordion__submenu-item:hover {
+    background: #b63b4d;
+    color: #FFF;
+}

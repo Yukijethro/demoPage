@@ -6,8 +6,11 @@
 	<link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-
-	<h1>一些常用的css组建以及js组件</h1>
+	
+	<header>
+		<h1>一些常用的css组件以及js组件</h1>
+	</header>
+	
 
 	<div class="main">
 		
@@ -21,7 +24,7 @@
 				<li class="control-list-item">音乐</li>
 				<li class="control-list-item">电影</li>
 			</ul>
-			<ul class="content-list">
+			<ul class="content-list default-border">
 				<li class="content-list-item" style="display: block;">
 					<h3>新闻啊</h3>
 					<p>北京时间12月17日晚间，切尔西俱乐部正式宣布了穆里尼奥的下课，事实上在官方发布正式消息之前，包括BBC、《每日邮报》在内的多家英国媒体就已经提前曝光了这一重磅消息。不仅如此，《天空体育》更是透露了一些细节，情景还原了这惊心动魄的一天。</p>
@@ -47,7 +50,7 @@
 
 		<!-- tab -->
 		<h2>标签切换2</h2>
-		<div class="tab">
+		<div class="tab default-border">
 			<div class="tab__navs">
 				<li class="tab__link">tab1</li>
 				<li class="tab__link">tab2</li>
@@ -55,7 +58,7 @@
 			</div>
 			<div class="tab__tabs">
 				<div class="tab__item">
-					<div class="tab">
+					<div class="tab default-border">
 						<div class="tab__navs">
 							<li class="tab__link">tab1</li>
 							<li class="tab__link">tab2</li>
@@ -63,7 +66,7 @@
 						</div>
 						<div class="tab__tabs">
 							<div class="tab__item">
-								<div class="tab">
+								<div class="tab default-border">
 									<div class="tab__navs">
 										<li class="tab__link">tab1</li>
 										<li class="tab__link">tab2</li>
@@ -78,7 +81,7 @@
 							</div>
 							<div class="tab__item">this is tab2</div>
 							<div class="tab__item">
-								<div class="tab">
+								<div class="tab default-border">
 									<div class="tab__navs">
 										<li class="tab__link">tab1</li>
 										<li class="tab__link">tab2</li>
@@ -86,7 +89,7 @@
 									</div>
 									<div class="tab__tabs">
 										<div class="tab__item">
-											<div class="tab">
+											<div class="tab default-border">
 												<div class="tab__navs">
 													<li class="tab__link">tab1</li>
 													<li class="tab__link">tab2</li>
@@ -109,7 +112,7 @@
 				</div>
 				<div class="tab__item">this is tab2</div>
 				<div class="tab__item">
-					<div class="tab">
+					<div class="tab default-border">
 						<div class="tab__navs">
 							<li class="tab__link">tab1</li>
 							<li class="tab__link">tab2</li>
@@ -149,13 +152,13 @@
 		
 		<!-- 元素拖曳 -->
 		<h2>元素拖曳</h2>
-		<div id="moveElement">
+		<div id="moveElement" class="default-border">
 			<div class="moveEl"></div>
 		</div>
 		
 		<!-- 手风琴组件 -->
 		<h2>手风琴组件</h2>
-		<div class="accordion">
+		<div class="accordion default-border">
 			<ul class="accordion__list">
 				<li class="accordion__item">
 					<div class="accordion__link">javascript</div>
@@ -183,9 +186,11 @@
 				</li>
 			</ul>
 		</div>
-
-
 	</div>
+
+	<footer id="footer">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque officia, velit ex nobis iusto non sequi corporis, voluptates laboriosam doloribus sunt tempore asperiores, laudantium assumenda eveniet esse porro maxime adipisci?
+	</footer>
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/index.js"></script>	
 </body>

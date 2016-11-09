@@ -6,13 +6,11 @@ body, ul, li{
 	list-style: none;
 }
 body{
-	background: #f1f1f1;
-	/*f6f9fc*/
-	font-family: 'Microsoft JhengHei';
+	font-family: 'Candara', 'Microsoft JhengHei';
 }
 h1{
-	font-size: 24px;
-	text-align: center;
+	font-size: 40px;
+	font-weight: 300;
 }
 
 h2{
@@ -25,9 +23,19 @@ img{
 	max-width: 100%;
 }
 
+.default-border{
+	box-shadow: 0 32px 34px rgba(71,82,93,.01);
+    border: 1px solid rgba(208,212,217,.5);
+}
+
+header{
+	text-align: center;
+}
+
 .main{
 	width: 600px;
 	margin: auto;
+	margin-bottom: 30px;
 }
 
 /*tab start*/
@@ -36,7 +44,6 @@ img{
 }
 .control-list{
 	height: 35px;
-	color: #fff;
 }
 .content-list{
 	padding: 30px;
@@ -44,8 +51,9 @@ img{
 	min-height: 200px;
 }
 .control-list-item{
+	border: 1px solid rgba(208,212,217,.5);
+	border-bottom: 0;
 	cursor: pointer;
-	background-color: #666;
 	margin-right: 3px;
 	height: 100%;
 	padding: 0 25px;
@@ -71,12 +79,11 @@ img{
 .tab{
 	background: #fff;
 	border: 1px solid #e1e1e1;
-	font-family: 'Candara';
 }
 
 .tab__navs{
 	overflow: hidden;
-	border-bottom: 1px solid #e1e1e1;
+	border-bottom: 1px solid rgba(208,212,217,.5);
 }
 
 .tab__link{
@@ -87,7 +94,7 @@ img{
 }
 
 .tab__link.active{
-	background: #e1e1e1;
+	background: rgba(208,212,217,.5);
 }
 
 .tab__item{
@@ -170,13 +177,13 @@ img{
 #moveElement{
 	background: #fff;
 	height: 300px; 
-	border: 1px solid #fff;
 	position: relative;
 }
 .moveEl{
+	border-radius: 3px;
 	width: 200px;
 	height: 100px;
-	background: #555;
+	background: #393E46;
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -193,6 +200,10 @@ img{
 	display: none;
 }
 
+.accordion__item:last-child{
+	border: none;
+}
+
 .accordion__link{
 	cursor: pointer;
     display: block;
@@ -200,12 +211,12 @@ img{
     color: #4D4D4D;
     font-size: 16px;
     font-weight: bolder;
-    border-bottom: 1px solid #CCC;
     position: relative;
 }
 
 .accordion__item{
 	list-style: none;
+	border-bottom: 1px solid #f1f1f1;
 }
 
 .accordion__item.open .accordion__link{
@@ -213,19 +224,27 @@ img{
 }
 
 .accordion__submenu{
-	background: #444359;
+	background-color: #222;
 }
 
 .accordion__submenu-item{
 	color: #fff;
 	padding: 15px 15px 15px 40px;
-	border-bottom: 1px solid #4b4a5e;
+	border-bottom: 1px solid #080808;
 	-webkit-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
 }
 
 .accordion__submenu-item:hover {
-    background: #b63b4d;
-    color: #FFF;
+   /* background: #b63b4d;
+    color: #FFF;*/
+}
+
+
+#footer{
+	border-top: 1px solid rgba(208,212,217,.5);
+	text-align: center;
+	margin: auto;
+	padding: 50px 0;
 }

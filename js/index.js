@@ -254,7 +254,7 @@ $(function(){
 	$('#header').on('mousemove', function(event){
 		var x              = event.pageX;
 		var y              = event.pageY;
-		var bgCentralityX  =  $(window).width() / 2;	//	背景图的中心点
+		var bgCentralityX  = $(window).width() / 2;	//	背景图的中心点
 		var bgOffsetX      = (x - bgCentralityX) / 30;
 		
 		var imgCentralityX = $('.parallax__people').offset().left + ($('.parallax__people').width() / 2);

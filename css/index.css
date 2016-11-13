@@ -9,6 +9,12 @@ body{
 	font-family: 'Candara', 'Microsoft JhengHei';
 	background: #f7f7f8;
 }
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 h1{
 	font-size: 40px;
 	font-weight: 300;
@@ -97,6 +103,12 @@ header{
 	height: 74px;
 	margin-left: 550px;
 	margin-top: 150px;
+}
+
+.parallax__texts{
+	float: right;
+	width: 50%;
+	padding-top: 9%;
 }
 
 .main{
@@ -308,10 +320,20 @@ header{
     color: #FFF;*/
 }
 
-
 #footer{
-	border-top: 1px solid rgba(208,212,217,.5);
 	text-align: center;
 	margin: auto;
 	padding: 50px 0;
+	background-color: #24252f;
+	min-width: 1200px;
+}
+
+.footer-nav li{
+	display: inline-block;
+}
+
+.footer-nav a{
+    color: #fff;
+    display: block;
+    padding: 15px;
 }

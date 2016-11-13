@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parallax</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        img{
+            width: 100%;
+            display: block;
+        }
+
+        body{
+            background: url(./img/parallax_bg.jpg);
+        }
+        
+        #parallax{
+            margin: 100px auto;
+            width: 1200px;
+            position: relative;
+            left: 0;
+            top: 0;
+            height: 660px;
+            overflow: hidden;
+        }
+        
+        .parallax__main{
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-left: -200px;
+            width: 1600px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="parallax">
+        <div class="parallax__main">
+            <img src="./img/parallax_main.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
